@@ -9,8 +9,11 @@ my $builder = Module::Build->new(
     dist_version_from => 'lib/Date/Holidays/PAK.pm',
     add_to_cleanup    => [ 'Date-Holidays-PAK-*' ],
     build_requires    => {
-         'Test::More' => 0,
-         'Readonly'   => 0,
+         'Test::More'      => 0,
+         'Readonly'        => 0,
+         'Time::localtime' => 1.02,
+         'Date::Hijri'     => '0.02',
+         'Date::Calc'      => 5.7,
     },
 );
 

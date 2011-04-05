@@ -1,4 +1,17 @@
 Revision history for Date-Holidays-PAK
 
+0.02    Tue Apr 05 15:12:12 2011
+        - Added Time::localtime to the pre-requisite list.
+        - Added Date::Hijri to the pre-requisite list.
+        - Added Date::Calc to the pre-requisite list.
+        - Made the constructor to pick current year if no year is supplied.
+        - Updated pod for Holiday Table.
+        - Segregated holidays between GREGORIAN and ISLAMIC dates.
+        - Fixed method get_holidays_count() to pick both GREGORIAN and ISLAMIC dates.
+        - Fixed method _build_holidays() with regard to holidays segragation.
+        - Added internal method _get_current_year().
+        - Added internal method _get_gregorian_date().
+        - Added internal method _g_year_2_h_year().
+
 0.01    Mon Apr 04 14:23:10 2011
         - First version released.
