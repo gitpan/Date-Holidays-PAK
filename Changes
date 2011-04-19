@@ -1,5 +1,9 @@
 Revision history for Date-Holidays-PAK
 
+0.03    Tue Apr 19 10:19:00 2011
+        - Renamed title "SYNOPSIS" to "DESCRIPTION".
+        - Minor cosmetics changes.
+
 0.02    Tue Apr 05 15:12:12 2011
         - Added Time::localtime to the pre-requisite list.
         - Added Date::Hijri to the pre-requisite list.
