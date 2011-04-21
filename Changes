@@ -1,5 +1,9 @@
 Revision history for Date-Holidays-PAK
 
+0.04    Thu Apr 21 15:47:22 2011
+        - Making use of Calendar::Hijri module instead of Date::Hijri.
+        - Added unit test.
+
 0.03    Tue Apr 19 10:19:00 2011
         - Renamed title "SYNOPSIS" to "DESCRIPTION".
         - Minor cosmetics changes.

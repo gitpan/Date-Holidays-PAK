@@ -6,9 +6,9 @@ use overload q("") => \&as_string, fallback => 1;
 
 use Carp;
 use Readonly;
-use Date::Hijri;
 use Data::Dumper;
 use Time::localtime;
+use Calendar::Hijri;
 use Date::Calc qw/Day_of_Week/;
 
 =head1 NAME
@@ -17,11 +17,11 @@ Date::Holidays::PAK - Interface to Pakistan national holidays.
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 Readonly my $MONTHS => [ undef, 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ];
 Readonly my $DAYS   => [ undef, 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun' ];
@@ -257,7 +257,9 @@ sub _build_holidays
 {
     my $yyyy = shift;
 
-    my ($holidays, $mm, $dd);
+    my ($holidays, $mm, $dd, $date);
+    $date = Calendar::Hijri->new();
+    
     foreach (keys %{$GREGORIAN})
     {
         push @{$holidays},
@@ -272,7 +274,7 @@ sub _build_holidays
 
     foreach (keys %{$ISLAMIC})
     {
-        ($yyyy, $mm, $dd) = _get_gregorian_date($yyyy, _g_year_2_h_year($yyyy), $ISLAMIC->{$_}->{mm}, $ISLAMIC->{$_}->{dd});
+        ($yyyy, $mm, $dd) = _get_gregorian_date($date, $yyyy, _g_year_2_h_year($date, $yyyy), $ISLAMIC->{$_}->{mm}, $ISLAMIC->{$_}->{dd});
         push @{$holidays},
             {
                 dd   => $dd,
@@ -294,20 +296,22 @@ sub _get_current_year
 
 sub _g_year_2_h_year
 {
+    my $date = shift;
     my $yyyy = shift;
-    (undef, undef, $yyyy) = g2h(1, 1, $yyyy);
+    ($yyyy) = $date->from_gregorian($yyyy, 1, 1);
     return $yyyy;
 }
 
 sub _get_gregorian_date
 {
+    my $date   = shift;
     my $c_yyyy = shift;
     my $yyyy   = shift;
     my $mm     = shift;
     my $dd     = shift;
 
-    my ($g_dd, $g_mm, $g_yyyy) = h2g($dd, $mm, $yyyy);
-    ($g_dd, $g_mm, $g_yyyy) = h2g($dd, $mm, $yyyy+1)
+    my ($g_yyyy, $g_mm, $g_dd) = $date->to_gregorian($yyyy, $mm, $dd);
+    ($g_yyyy, $g_mm, $g_dd) = $date->to_gregorian($yyyy+1, $mm, $dd)
         if ($g_yyyy != $c_yyyy);
     return ($g_yyyy, $g_mm, $g_dd);
 }
