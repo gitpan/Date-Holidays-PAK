@@ -12,7 +12,7 @@ WriteMakefile(
         'Test::More'      => 0,
         'Readonly'        => 0,
         'Time::localtime' => 1.02,
-        'Date::Hijri'     => '0.02',
+        'Calendar::Hijri' => '0.05',
         'Date::Calc'      => 5.7,
     },
     ($ExtUtils::MakeMaker::VERSION >= 6.3002

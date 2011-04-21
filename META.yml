@@ -3,8 +3,8 @@ abstract: 'Interface to Pakistan national holidays.'
 author:
   - 'Mohammad S Anwar <mohammad.anwar@yahoo.com>'
 build_requires:
+  Calendar::Hijri: 0.05
   Date::Calc: 5.7
-  Date::Hijri: 0.02
   Readonly: 0
   Test::More: 0
   Time::localtime: 1.02
@@ -19,7 +19,7 @@ name: Date-Holidays-PAK
 provides:
   Date::Holidays::PAK:
     file: lib/Date/Holidays/PAK.pm
-    version: 0.04
+    version: 0.05
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.04
+version: 0.05
