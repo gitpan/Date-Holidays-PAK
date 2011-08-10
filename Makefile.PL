@@ -10,10 +10,10 @@ WriteMakefile(
     clean         => { FILES => 'Date-Holidays-PAK-*' },
     PREREQ_PM     => {
         'Test::More'      => 0,
-        'Readonly'        => 0,
-        'Time::localtime' => 1.02,
+        'Readonly'        => '1.03',
+        'Time::localtime' => '1.02',
         'Calendar::Hijri' => '0.05',
-        'Date::Calc'      => 5.7,
+        'Date::Calc'      => '5.7',
     },
     ($ExtUtils::MakeMaker::VERSION >= 6.3002
       ? ('LICENSE'=> 'perl')

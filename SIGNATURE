@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.66.
+signed via the Module::Signature module, version 0.68.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,14 +14,14 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 fda127b38fb26c9d115d980fd2ef6d9eef8e01ea Build.PL
-SHA1 abb0d5234c06b0a25bb4d4dba80bf97e97e2e9bf Changes
+SHA1 ad34b0226fad9d71ba9294c81c5fb92d750d47e9 Build.PL
+SHA1 5c07da2907bc35d4fb48d4949f0fbc58a2068d26 Changes
 SHA1 2570c3e1164edd7b2f70072ad273b682c1e8522c MANIFEST
 SHA1 7d20e4e840781030202bb045d5ab81b3fd1b68b0 MANIFEST.SKIP
-SHA1 7745253a536b3b4b1675f18df16247c0e51ece45 META.yml
-SHA1 ac0abb96762ccbf01f7620a87a63b4dbd8f66fea Makefile.PL
-SHA1 1d81871e355b46b9cc381519cb23d06ed3f10a22 README
-SHA1 e1826a686794f2ca36a17693a47287c5e50a4e37 lib/Date/Holidays/PAK.pm
+SHA1 29aaf2cb5406eb4ef38227977ae8181e3a6fdd87 META.yml
+SHA1 93928d1a95b7bb432fe34f68f292951155b63c97 Makefile.PL
+SHA1 f2d2956d3271a669e430e3919b56d7afb49365e7 README
+SHA1 72705269e43f0e24992c8aa150b6114cd29b39f1 lib/Date/Holidays/PAK.pm
 SHA1 54cdccfdb59bf38adb139bb365788932e11b512c t/00-load.t
 SHA1 be1f01a2223961edfe3ee08c33a0b15ea3698d38 t/01-test-case.t
 SHA1 2b8ffb7e4f399af95d092743846ac8d438f2c53e t/manifest.t
@@ -29,11 +29,11 @@ SHA1 0765c9ff0cc4319f415bb08d0053b7717a8284a2 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2.0.14 (MingW32)
 
-iQEcBAEBAgAGBQJNsEXFAAoJEPYcXBXhRYOhE00H/2dJkN+BQ7dLeM1C0m8BdCaO
-lzcBX7SiU2J7N1Wrl6bDRLE0fPt+92XjLYzU7uiJ8YwtmJ4beJJ4vmENs4a2pN4q
-CDRdCwrLSbbUwki28KIpKrmnOH3hy4tGM9kxak4WLkjNgTd7AHxDE9sRpKEL5b1K
-G6Vjei56w+EseOBc7ys138JntBhRu1fiRI0kWRluBZADpDV85hYNLZmr/MPJIYt2
-9w7lH8qQmyuHemt+WRZg5X1JdyOrt8CmSdQOHthwcju7GC5BttIP2KlHXDmxjmou
-OG47sZmFhVS+psTBynMIz81JwqssznUisf82TPjDlvoTrtCBa6SskuhJJGbRaYk=
-=ixaE
+iQEcBAEBAgAGBQJOQmwMAAoJEPYcXBXhRYOh3P8H/jkz/kkfHRx19xjVcZBoApK8
+77Rdk9DkAkNcNCQfepfurS+3nX5WjbFtLc43CbMobXFal+NoyFkhrOPB86f8rE00
+uOMn3c5OjTHlk4cf/qcy7BI7uOh7FbRk7h+7ahyUl1RscpUJPkBTfg9zwp82zWY6
+9zP9CnqGbFTDaCD3o7iCCR5ENd6KsOxjIk4uGR2eyHGbCEreOlRwDI2e9aBp3gxm
+/+CMeCrrvh31RewSX8JqG4LBDTnGrJjcbeZ03CFL52pI9CMgzoC9cImCdsJOCXuZ
+0pRmaKbkx8fSzc+IbRmK22154VhyAMIJxjnFDfOr8oVtT/YAyQnpN2K2uOoG8HE=
+=lt3P
 -----END PGP SIGNATURE-----

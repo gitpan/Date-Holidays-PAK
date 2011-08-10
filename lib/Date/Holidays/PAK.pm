@@ -17,11 +17,11 @@ Date::Holidays::PAK - Interface to Pakistan national holidays.
 
 =head1 VERSION
 
-Version 0.05
+Version 0.06
 
 =cut
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 Readonly my $MONTHS => [ undef, 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ];
 Readonly my $DAYS   => [ undef, 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun' ];

@@ -5,7 +5,7 @@ author:
 build_requires:
   Calendar::Hijri: 0.05
   Date::Calc: 5.7
-  Readonly: 0
+  Readonly: 1.03
   Test::More: 0
   Time::localtime: 1.02
 configure_requires:
@@ -19,7 +19,7 @@ name: Date-Holidays-PAK
 provides:
   Date::Holidays::PAK:
     file: lib/Date/Holidays/PAK.pm
-    version: 0.05
+    version: 0.06
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.05
+version: 0.06
